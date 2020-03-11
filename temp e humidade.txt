@@ -1,0 +1,25 @@
+#include <dht.h> // inclusão da biblioteca do sensor, necessário baixa-la da internet e inclui-la // na aba Sketch, pesquisar no google pelo dht11 para arduino
+dht DHT;// Cria um objeto da classe dht
+uint32_t timer = 0; // pode substituir por delay no final.
+#define dpin A1 //definindo a porta
+void setup()
+{
+  Serial.begin(9600);// Inicializa serial com taxa de transmissão de 9600 bauds
+}
+void loop()
+{
+  //Executa 1 vez a cada 2 segundos
+  if(millis() - timer>= 2000)
+}
+
+DHT.readll(dpin);
+Serial.print(DHT.humidity);
+Serial.println("%");
+
+Serial.print(DHT.temperature);
+Serial.println (" Celsius");
+
+timer = millis();
+
+}
+}

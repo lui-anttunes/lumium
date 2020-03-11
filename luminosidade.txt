@@ -1,0 +1,9 @@
+int pin = A0; // entrada anológica
+int valor = 0;// valor que será lido
+void setup(){
+  Serial.begin(9600);
+  }
+  void loop(){
+      valor= analogRead(pin);
+      Serial.println(valor); 
+    }
