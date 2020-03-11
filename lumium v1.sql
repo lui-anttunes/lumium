@@ -4,11 +4,11 @@ use lumium; -- criando e selecionando o banco
 create table cliente( -- criando a tabela usuarios
 	id int primary key auto_increment,
     nome varchar(100) not null,
-    cnpj char(14) not null,
+    cnpj varchar(20) not null,
     servico int,
     orcamento decimal(5,2),
-    telefone char(13),
-    celular char(14),
+    telefone varchar(20),
+    celular varchar(20),
     email varchar(50) not null
 );
 
