@@ -10,16 +10,16 @@ void loop()
 {
   //Executa 1 vez a cada 2 segundos
   if(millis() - timer>= 2000)
-}
+{
 
-DHT.readll(dpin);
-Serial.print(DHT.humidity);
-Serial.println("%");
+  DHT.readll(dpin);
+  Serial.print(DHT.humidity);
+  Serial.println("%");
 
-Serial.print(DHT.temperature);
-Serial.println (" Celsius");
+  Serial.print(DHT.temperature);
+  Serial.println (" Celsius");
 
-timer = millis();
+  timer = millis();
 
-}
+  }
 }
